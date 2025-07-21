@@ -80,5 +80,9 @@ const Homeproduct = [
         type: 'featured',
     },
 ]
+<<<<<<< HEAD
 export default Homeproduct;
  
+=======
+export default Homeproduct;
+>>>>>>> origin/main

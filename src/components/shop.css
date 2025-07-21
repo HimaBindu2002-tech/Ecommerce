@@ -4,12 +4,20 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
 .shop {
     width: 100%;
     padding: 20px 30px;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
 .shop h2 {
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -17,55 +25,95 @@
     font-size: 32px;
     font-weight: 300;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
 .shop p {
     margin-top: 5px;
     color: #8a8a8a;
     font-size: 14px;
     font-weight: 600;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
 .shop .container {
     max-width: 100%;
     display: flex;
     margin-top: 20px;
 }
+<<<<<<< HEAD
  
 .shop .container .left_box {
     width: 20%;
  
 }
  
+=======
+
+.shop .container .left_box {
+    width: 20%;
+
+}
+
+>>>>>>> origin/main
 .shop .container .left_box .category {
     border: 3px solid #f6f6f6;
     width: 260px;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
 .shop .container .left_box .category .header {
     max-width: 100%;
     padding: 10px 20px;
     background: #f6f6f6;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
 .shop .container .left_box .category .header h3 {
     font-size: 16px;
     color: #232323;
     letter-spacing: 1px;
     text-transform: uppercase;
+<<<<<<< HEAD
  
 }
  
+=======
+
+}
+
+>>>>>>> origin/main
 .shop .container .left_box .category .box {
     margin-top: 10px;
     width: 100%;
     padding: 10px 20px;
 }
+<<<<<<< HEAD
  
 .shop .container .left_box .category .box ul {
     max-width: 100%;
  
 }
  
+=======
+
+.shop .container .left_box .category .box ul {
+    max-width: 100%;
+
+}
+
+>>>>>>> origin/main
 .shop .container .left_box .category .box ul li {
     list-style: none;
     margin-left: 20px;
@@ -78,21 +126,35 @@
     cursor: pointer;
     transition: 0.5s;
 }
+<<<<<<< HEAD
  
 .shop .container .left_box .category .box ul li:hover {
     color: #232323;
  
 }
  
+=======
+
+.shop .container .left_box .category .box ul li:hover {
+    color: #232323;
+
+}
+
+>>>>>>> origin/main
 .shop .container .left_box .banner {
     margin-top: 20px;
     width: 250px;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
 .shop .container .left_box .banner .img_box img {
     width: 100%;
     object-fit: cover;
 }
+<<<<<<< HEAD
  
 .shop .container .right_box {
     width: 74%;
@@ -103,11 +165,24 @@
     max-width: 100%;
 }
  
+=======
+
+.shop .container .right_box {
+    width: 74%;
+
+}
+
+.shop .container .right_box .banner {
+    max-width: 100%;
+}
+
+>>>>>>> origin/main
 .shop .container .right_box .banner .img_box img {
     width: 100%;
     object-fit: cover;
     height: 300px;
 }
+<<<<<<< HEAD
  
 .shop .container .right_box .product_box {
     max-width: 100%;
@@ -115,6 +190,15 @@
  
 }
  
+=======
+
+.shop .container .right_box .product_box {
+    max-width: 100%;
+    padding: 10px 10px;
+
+}
+
+>>>>>>> origin/main
 .shop .container .right_box .product_box h2 {
     color: #232323;
     text-transform: uppercase;
@@ -122,14 +206,22 @@
     font-size: 22px;
     margin-top: 10px;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
 .shop .container .right_box .product_box .product_container {
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
 .shop .container .right_box .product_box .product_container .box {
     padding: 10px 10px;
     width: 350px;
@@ -140,6 +232,7 @@
     margin-top: 20px;
     justify-content: space-between;
 }
+<<<<<<< HEAD
  
 .shop .container .right_box .product_box .product_container .box .img_box {
     display: flex;
@@ -151,6 +244,19 @@
  
 }
  
+=======
+
+.shop .container .right_box .product_box .product_container .box .img_box {
+    display: flex;
+}
+
+.shop .container .right_box .product_box .product_container .box .img_box img {
+    width: 100%;
+    height: 270px;
+
+}
+
+>>>>>>> origin/main
 .shop .container .right_box .product_box .product_container .box .img_box .icon {
     display: flex;
     flex-direction: column;
@@ -159,7 +265,11 @@
     margin-left: 300px;
     transition: 0.5s;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
 .shop .container .right_box .product_box .product_container .box .img_box .icon li {
     list-style: none;
     border: 2px sloid #f6f6f6;
@@ -171,37 +281,63 @@
     cursor: pointer;
     transition: 0.5s;
 }
+<<<<<<< HEAD
  
 .shop .container .right_box .product_box .product_container .box:hover .img_box .icon {
     margin-left: -50px;
 }
  
+=======
+
+.shop .container .right_box .product_box .product_container .box:hover .img_box .icon {
+    margin-left: -50px;
+}
+
+>>>>>>> origin/main
 .shop .container .right_box .product_box .product_container .box:hover .img_box .icon li:hover {
     color: #fff;
     background: #cd1e76;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
 .shop .container .right_box .product_box .product_container .box .details {
     margin-top: 10px;
     width: 100%;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
 .shop .container .right_box .product_box .product_container .box .details h3 {
     text-align: center;
     color: #232323;
     font-size: 18px;
     font-weight: 600;
     text-transform: capitalize;
+<<<<<<< HEAD
  
 }
  
+=======
+
+}
+
+>>>>>>> origin/main
 .shop .container .right_box .product_box .product_container .box .details p {
     margin-top: 5px;
     text-align: center;
     color: #cd1e76;
     font-size: 16px;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
 .shop .container .right_box .product_box .product_container .box .details button {
     margin-top: 10px;
     margin-left: 30%;
@@ -213,12 +349,20 @@
     font-weight: 600;
     cursor: pointer;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
 .shop .container .right_box .product_box .product_container .box .details button:hover {
     color: #fed700;
     background: #232323;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
 .product_detail {
     width: 900px;
     height: 500px;
@@ -231,7 +375,11 @@
     border-radius: 5px;
     padding: 20px 30px;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
 .product_detail .close_btn {
     float: right;
     border: none;
@@ -241,6 +389,7 @@
     font-size: 22px;
     cursor: pointer;
 }
+<<<<<<< HEAD
  
 .product_detail .container {
     width: 100%;
@@ -248,22 +397,43 @@
  
 }
  
+=======
+
+.product_detail .container {
+    width: 100%;
+    display: flex;
+
+}
+
+>>>>>>> origin/main
 .product_detail .container .img_box {
     padding: 20px 20px;
     background: #f6f6f6;
     border-radius: 10px;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
 .product_detail .container .img_box img {
     width: 270px;
     height: 270px;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
 .product_detail .container .info {
     margin-top: 30px;
     margin-left: 40px;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
 .product_detail .container .info h4 {
     color: #8a8a8a;
     font-size: 16px;
@@ -271,7 +441,11 @@
     font-weight: 600;
     letter-spacing: 1px;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
 .product_detail .container .info h2 {
     margin-top: 30px;
     color: #232323;
@@ -279,7 +453,11 @@
     font-size: 22px;
     font-weight: 600;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
 .product_detail .container .info p {
     margin-top: 10px;
     color: #8a8a8a;
@@ -291,7 +469,11 @@
     margin-top:10px;
     font-size: 24px;
     color: #cd1e76;
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
 }
 .product_detail .container .info button{
     margin-top: 10px;

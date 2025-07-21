@@ -1,6 +1,10 @@
 import React from "react";
 import './contact.css';
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
 const Contact = () => {
     
     return (
@@ -50,5 +54,9 @@ const Contact = () => {
         </>
     )
 }
+<<<<<<< HEAD
 export default Contact;
  
+=======
+export default Contact;
+>>>>>>> origin/main

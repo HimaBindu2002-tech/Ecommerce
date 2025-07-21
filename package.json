@@ -1,8 +1,17 @@
 {
+<<<<<<< HEAD
   "name": "myapp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+=======
+  "name": "ecommerce_website",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@auth0/auth0-react": "^2.3.0",
+    "@reduxjs/toolkit": "^2.8.2",
+>>>>>>> origin/main
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
@@ -10,8 +19,14 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-icons": "^5.5.0",
+<<<<<<< HEAD
     "react-router-dom": "^7.6.2",
     "react-scripts": "^5.0.1",
+=======
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.6.2",
+    "react-scripts": "5.0.1",
+>>>>>>> origin/main
     "web-vitals": "^2.1.4"
   },
   "scripts": {

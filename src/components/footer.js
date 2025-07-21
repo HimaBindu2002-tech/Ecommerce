@@ -4,7 +4,11 @@ import { FaPiggyBank } from "react-icons/fa6";
 import { LiaShippingFastSolid } from "react-icons/lia";
 import { FaHeadphones } from "react-icons/fa6";
 import { IoWallet } from "react-icons/io5";
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
 const Footer = () => {
     return (
         <>
@@ -52,7 +56,11 @@ const Footer = () => {
                         <div className='header'>
                             <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq4IXywVr3Lw8VlrpOtZvLwuhrjAx3ouF5pOV22puWUyljkeyzvxA36Qr1YxMI1_fZkNo&usqp=CAU' alt='logo' height="50px" width="100px"/>
                             <p>Discover quality, style, and unbeatable deals--all in one place. Shop the latest trends and essentials, delivered right to your door!</p>
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
                         </div>
                         <div className='bottom'>
                             <div className='box'>

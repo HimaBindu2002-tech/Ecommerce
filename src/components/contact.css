@@ -4,17 +4,29 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
 .contact {
     padding: 20px 40px;
     width: 100%;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
 .contact .container {
     padding: 10px 20px;
     max-width: 100%;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
 .contact .container .form {
     width: 400px;
     background: #f6f6f6;
@@ -24,7 +36,11 @@
     border-top: 3px solid #fed700;
     border-radius: 5px;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
 .contact .container .form h2 {
     text-transform: uppercase;
     color: #cd1e7c;
@@ -32,13 +48,21 @@
     letter-spacing: 1px;
     font-weight: 600;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
 .contact .container .form .box {
     display: flex;
     margin-top: 20px;
     justify-content: space-between;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
 .contact .container .form .box .label h4 {
     margin-left: 30px;
     color: #232323;
@@ -46,7 +70,11 @@
     font-weight: 600;
     margin-top:10px;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> origin/main
 .contact .container .form .box .input input {
     margin-right: 16px;
     border: none;
@@ -74,5 +102,9 @@
     background: none;
     background: #fed700;
     cursor: pointer;
+<<<<<<< HEAD
 }
  
+=======
+}
+>>>>>>> origin/main
