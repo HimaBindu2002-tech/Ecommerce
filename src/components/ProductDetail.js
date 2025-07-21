@@ -4,7 +4,6 @@ import Homeproduct from "./home_products";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../cartSlice";
 
-
 const ProductDetail = () => {
   const { id } = useParams();
   const product = Homeproduct.find((item) => item.id === parseInt(id));

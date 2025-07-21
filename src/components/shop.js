@@ -1,49 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import './shop.css';
-import { FaHeart } from "react-icons/fa";
-import { FaEye } from "react-icons/fa";
-import { IoMdClose } from "react-icons/io";
+import { FaHeart, FaEye } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Shop = ({ shop, Filter, allcatefilter, addToCart }) => {
-
-    const [showDetail, setShowdetail] = useState(false)
-    const [detail,setDetail]=useState([])
-    const detailPage=(product)=>{
-        const detaildata=([{product}])
-        const productdetail= detaildata[0]['product'];
-        setDetail(productdetail)
-        setShowdetail(true)
-    }
-
-    const closeDetail=()=>{
-        setShowdetail(false)
-    }
-
     return (
         <>
-            {
-                showDetail ?
-                    <>
-                        <div className="product_detail">
-                            <button className="close_btn" onClick={closeDetail}><IoMdClose/></button>
-                            <div className="container">
-                                <div className="img_box">
-                                    <img src={detail.image} alt=""/>
-                                </div>
-                                <div className="info">
-                                    <h4># {detail.category}</h4>
-                                    <h2>{detail.Name}</h2>
-                                    <p>A screen everyone will love: whether your family is streaming or video chatting with friends tablets A8...</p>
-                                   <h3>${detail.price}</h3>
-                                    <button onClick={()=>addToCart(detail)}>Add To Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                    </>
-                    :
-                    null
-
-        }
             <div className="shop">
                 <h2># shop</h2>
                 <p>Home . shop</p>
@@ -63,13 +25,12 @@ const Shop = ({ shop, Filter, allcatefilter, addToCart }) => {
                                     <li onClick={() => Filter("Refridgerator")}># Refridgerator</li>
                                     <li onClick={() => Filter("Mobile")}># Mobile</li>
                                     <li onClick={() => Filter("charging stand")}># charging stand</li>
-
                                 </ul>
                             </div>
                         </div>
                         <div className="banner">
                             <div className="img_box">
-                                <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRllliKa2-uiUvCFaSMR1vaDA6iXQd-B8pZLQ&s' alt="banner" height="198px" width="100px" />
+                                <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRllliKa2-uiUvCFaSMR1vaDA6iXQd-B8pZLQ&s' alt="banner" />
                             </div>
                         </div>
                     </div>
@@ -82,28 +43,24 @@ const Shop = ({ shop, Filter, allcatefilter, addToCart }) => {
                         <div className="product_box">
                             <h2>Shop Product</h2>
                             <div className="product_container">
-                                {
-                                    shop.map((curElm) => {
-                                        return (
-                                            <>
-                                                <div className="box">
-                                                    <div className="img_box">
-                                                        <img src={curElm.image} alt="" />
-                                                        <div className="icon">
-                                                            <li><FaHeart /></li>
-                                                            <li onClick={()=>detailPage(curElm)}><FaEye /></li>
-                                                        </div>
-                                                    </div>
-                                                    <div className="details">
-                                                        <h3>{curElm.Name}</h3>
-                                                        <p>${curElm.price}</p>
-                                                        <button onClick={() => addToCart(curElm)}>Add to Cart</button>
-                                                    </div>
-                                                </div>
-                                            </>
-                                        )
-                                    })
-                                }
+                                {shop.map((curElm) => (
+                                    <div className="box" key={curElm.id}>
+                                        <div className="img_box">
+                                            <Link to={`/product/${curElm.id}`}>
+                                                <img src={curElm.image} alt={curElm.Name} />
+                                            </Link>
+                                            <div className="icon">
+                                                <li><FaHeart /></li>
+                                                <li><Link to={`/product/${curElm.id}`}><FaEye /></Link></li>
+                                            </div>
+                                        </div>
+                                        <div className="details">
+                                            <h3>{curElm.Name}</h3>
+                                            <p>${curElm.price}</p>
+                                            <button onClick={() => addToCart(curElm)}>Add to Cart</button>
+                                        </div>
+                                    </div>
+                                ))}
                             </div>
                         </div>
                     </div>
@@ -112,4 +69,5 @@ const Shop = ({ shop, Filter, allcatefilter, addToCart }) => {
         </>
     )
 }
+
 export default Shop;
