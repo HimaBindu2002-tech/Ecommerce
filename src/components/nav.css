@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -191,4 +191,278 @@
     color: #232323;
     font-weight: 600;
     font-size: 14px;
+} */
+
+/* Reset and basics */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header {
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.top_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    cursor: pointer;
+}
+
+.auth-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.login-button {
+    padding: 8px 16px;
+    background: #fed700;
+    border: none;
+    color: #232323;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.lgn-btn {
+    margin-right: 8px;
+}
+
+.login-form {
+    display: flex;
+    gap: 8px;
+}
+
+.form-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-button {
+    background: #cd1e76;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.desc-text {
+    color: #232323;
+    font-weight: 600;
+}
+
+
+.second_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    gap: 10px;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.menu-toggle {
+    font-size: 28px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #232323;
+    flex-shrink: 0;
+    display: none;
+
+}
+
+.search_box {
+    flex: 1;
+    display: flex;
+    max-width: 500px;
+    justify-content: center;
+}
+
+.search_box input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    background: #f6f7f8;
+    border-radius: 5px 0 0 5px;
+    min-width: 0;
+
+}
+
+.search_box button {
+    padding: 8px 12px;
+    background: #cd1e76;
+    border: none;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search_box button:hover {
+    background: #fed700;
+    color: #cd1e76;
+}
+
+.profile-section {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile-icon {
+    font-size: 24px;
+    color: #232323;
+}
+
+.login-desc {
+    font-size: 14px;
+    color: #888;
+    margin: 0;
+}
+
+
+.offer {
+    background: #fed700;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #232323;
+    border-radius: 6px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.nav {
+    background: #232323;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 12px 0;
+    margin: 0;
+}
+
+.nav ul li .link {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav ul li .link:hover {
+    color: #fed700;
+}
+
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .offer {
+        display: none;
+    }
+
+    .second_row {
+        justify-content: space-between;
+    }
+
+    .search_box {
+        max-width: none;
+        margin: 0 10px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav.open {
+        display: block;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .nav ul li {
+        border-top: 1px solid #444;
+    }
+
+    .nav ul li:first-child {
+        border-top: none;
+    }
+
+    .nav ul li .link {
+        padding: 12px 20px;
+        display: block;
+    }
+}
+
+
+@media (min-width: 769px) {
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .second_row {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        padding: 10px 40px;
+        gap: 20px;
+    }
+
+    .profile-section {
+        justify-self: start;
+    }
+
+    .search_box {
+        display: flex;
+        justify-self: center;
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .offer {
+        justify-self: end;
+    }
+
+    .nav {
+        display: block;
+    }
 }

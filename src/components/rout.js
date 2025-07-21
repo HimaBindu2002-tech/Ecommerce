@@ -4,6 +4,8 @@ import Home from './home.js';
 import Shop from './shop.js';
 import Cart from './cart.js';
 import Contact from './contact.js';
+import ProductDetail from './ProductDetail';
+
 
 const AppRoutes = ({ shop, Filter, allcatefilter, addToCart ,cart, setCart}) => {
     return (
@@ -13,6 +15,7 @@ const AppRoutes = ({ shop, Filter, allcatefilter, addToCart ,cart, setCart}) => 
                 <Route path='cart' element={<Cart cart={cart} setCart={setCart}/>} />
                 <Route path='shop' element={<Shop shop={shop} Filter={Filter} allcatefilter={allcatefilter} addToCart={addToCart}/>} />
                 <Route path='/contact' element={<Contact />} />
+                <Route path='/product/:id' element={<ProductDetail />} />
             </Routes>
         </>
     )
